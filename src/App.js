@@ -1,26 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useContext } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 
+import { Navbar } from './components/layout/Navbar';
+import { Footer } from './components/layout/Footer';
+
+import { LandingPage } from './components/pages/LandingPage';
+import { Projects } from './components/pages/Projects';
+import { Career } from './components/pages/Career';
+
+
+import { GlobalProvider } from './context/GlobalState';
+import { GlobalContext } from './context/GlobalState';
+
 function App() {
+  const { isLandingPageClose } = useContext(GlobalContext);
+  console.log(isLandingPageClose);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <GlobalProvider>
+      <Router>
+        <Switch>
+          <div className='App'>
+            <Navbar />
+            <Route exact path='/' component={LandingPage} />
+            <div className='container'>
+              <Route exact path='/projects' component={Projects} />
+              <Route exact path='/career' component={Career} />
+            </div>
+            <Footer />
+          </div>
+        </Switch>
+      </Router>
+    </GlobalProvider>
   );
 }
-
 export default App;
