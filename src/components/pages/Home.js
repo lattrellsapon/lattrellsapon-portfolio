@@ -8,7 +8,7 @@ export const Home = () => {
 
   return (
     <div className='home-content'>
-      <video src={showcase} className='showcase' loop autoPlay></video>
+      <video src={showcase} className='showcase' loop autoPlay muted></video>
       <div className='about-me'>
         <section>
           <p>

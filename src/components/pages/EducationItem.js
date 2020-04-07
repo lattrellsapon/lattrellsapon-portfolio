@@ -11,11 +11,12 @@ export const EducationItem = ({ educationItem }) => {
           {educationItem.accomplishment} - ({educationItem.tenure})
         </p>
 
-        {educationItem.transcript != '' ? (
+        {educationItem.transcript !== '' ? (
           <a
             href={educationItem.transcript}
             className='highlight-green'
             target='_blank'
+            rel='noopener noreferrer'
           >
             Download Transcript
           </a>

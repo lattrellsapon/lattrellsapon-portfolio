@@ -39,7 +39,7 @@ export const LandingPage = () => {
     return (
       <div className='landing-page'>
         <animated.div className='landing-container text-center' style={props}>
-          <h1>Welcome to my portfolio </h1>
+          <h1>Welcome</h1>
           <form onSubmit={onSubmit}>
             <label htmlFor='name'>Let's get to know each other.</label>
             <br />
@@ -53,7 +53,7 @@ export const LandingPage = () => {
             <br />
             <input
               type='submit'
-              value='Okay, entertain me.'
+              value='Okay,sure. Why not.'
               className='submit-button'
             />
             <button onClick={closeThisPage} className='close-button'>

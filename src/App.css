@@ -164,11 +164,49 @@ section p {
   background: #f8f9fa;
   padding: 10px;
   margin-bottom: 10px;
+  border-radius: 4px;
 }
 
 .experience-container,
 .education-item-container {
   padding: 20px;
+}
+
+/* Contact */
+.contact-container {
+  background: #f8f9fa;
+  padding: 10px;
+  border-radius: 4px;
+  height: 720px;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: #28a745;
+  margin: 0 5px;
+}
+
+.two-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+
+.grid-box {
+  /* background: red; */
+  padding: 10px;
+  width: 80%;
+  margin: auto;
+}
+
+.grid-box input,
+textarea {
+  display: block;
+  /* width: 100%; */
+}
+
+textarea {
+  height: 150px;
 }
 
 /* Footer */
