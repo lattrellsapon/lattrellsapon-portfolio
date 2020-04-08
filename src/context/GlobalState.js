@@ -11,7 +11,7 @@ import auttranscript from '../transcript/auttranscript.pdf';
 // Initial State
 const initialState = {
   currentUser: '',
-  isLandingPageClose: true,
+  isLandingPageClose: false,
   workExperience: [
     {
       id: 1,
