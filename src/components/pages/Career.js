@@ -4,7 +4,7 @@ import { Education } from './Education';
 
 export const Career = () => {
   return (
-    <div>
+    <div className='career-container'>
       <WorkExperience />
       <Education />
     </div>

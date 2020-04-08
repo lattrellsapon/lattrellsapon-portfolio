@@ -10,28 +10,45 @@ export const Contact = () => {
             Thank you again for your interest. Get in touch if you want to know
             more about me. Cheers!
           </p>
-          <p className='highlight-green'>
-            <i class='fas fa-phone'></i>
-            <a href='tel:0211775895' className='contact-link'>
-              0211775895
-            </a>
-          </p>
-          <p className='highlight-green'>
-            <i class='fas fa-envelope'></i>
-            <a href='mailto:lattrellsapon@gmail.com' className='contact-link'>
-              lattrellsapon@gmail.com
-            </a>
-          </p>
+          <div className='contact-details'>
+            <p>
+              <i className='fas fa-phone highlight-green'></i>
+              <a href='tel:0211775895' className='contact-link'>
+                0211775895
+              </a>
+            </p>
+            <p>
+              <i className='fas fa-envelope highlight-green'></i>
+              <a href='mailto:lattrellsapon@gmail.com' className='contact-link'>
+                lattrellsapon@gmail.com
+              </a>
+            </p>
+            <div className='icon-container'>
+              <a
+                href='https://www.linkedin.com/in/lattrell-sapon-772b49143/'
+                className='highlight-green'
+              >
+                <i className='fab fa-linkedin'></i>
+              </a>
+              <a
+                href='https://github.com/lattrellsapon'
+                className='highlight-green'
+              >
+                <i className='fab fa-github-square'></i>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
       <div className='grid-box'>
-        <form>
+        <form className='form-container'>
           <label htmlFor='name'>Full Name</label>
-          <input type='text' />
+          <input type='text' className='input-field' />
           <label htmlFor='email'>Email</label>
-          <input type='email' />
+          <input type='email' className='input-field' />
           <label htmlFor='message'>Message</label>
-          <textarea name='message'></textarea>
+          <textarea name='message' className='message-field'></textarea>
+          <input type='submit' value='SEND' className='send-button' />
         </form>
       </div>
     </div>

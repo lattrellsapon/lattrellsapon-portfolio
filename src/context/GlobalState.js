@@ -1,12 +1,17 @@
 import React, { createContext, useReducer } from 'react';
 import AppReducer from './AppReducer';
 
+import rosaryapp from '../images/RosaryApp.png';
+import portfoliophotography from '../images/Photography.png';
+import dategenerator from '../images/DateGenerator.png';
+import budgetmanager from '../images/BudgetManager.png';
+
 import auttranscript from '../transcript/auttranscript.pdf';
 
 // Initial State
 const initialState = {
   currentUser: '',
-  isLandingPageClose: false,
+  isLandingPageClose: true,
   workExperience: [
     {
       id: 1,
@@ -50,6 +55,32 @@ const initialState = {
       transcript: '',
     },
   ],
+  projects: [
+    {
+      id: 0,
+      projectName: 'Rosary Application',
+      projectLink: 'https://elastic-edison-407014.netlify.com/',
+      projectImage: rosaryapp,
+    },
+    {
+      id: 1,
+      projectName: 'Portfolio Photography',
+      projectLink: 'https://youthful-goldberg-54a29a.netlify.com/',
+      projectImage: portfoliophotography,
+    },
+    {
+      id: 2,
+      projectName: 'Budget Manager',
+      projectLink: 'https://stupefied-curie-c68dad.netlify.com/',
+      projectImage: budgetmanager,
+    },
+    {
+      id: 3,
+      projectName: 'Date Generator',
+      projectLink: 'https://goofy-borg-191ede.netlify.com/',
+      projectImage: dategenerator,
+    },
+  ],
 };
 
 // Create context
@@ -81,6 +112,7 @@ export const GlobalProvider = ({ children }) => {
         isLandingPageClose: state.isLandingPageClose,
         workExperience: state.workExperience,
         education: state.education,
+        projects: state.projects,
         closeLandingPage,
         updateUserName,
       }}

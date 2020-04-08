@@ -7,8 +7,8 @@ import { Footer } from './components/layout/Footer';
 
 import { LandingPage } from './components/pages/LandingPage';
 import { Projects } from './components/pages/Projects';
-import { Career } from './components/pages/Career';
 import { Skills } from './components/pages/Skills';
+import { Career } from './components/pages/Career';
 import { Contact } from './components/pages/Contact';
 
 import { GlobalProvider } from './context/GlobalState';
