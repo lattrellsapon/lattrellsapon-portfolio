@@ -1,9 +1,46 @@
-import React, { useContext } from 'react';
+import React, { useState, useContext } from 'react';
+
+import { EmailSucces } from '../alerts/EmailSucces';
+import { EmailError } from '../alerts/EmailError';
 
 import { GlobalContext } from '../../context/GlobalState';
 
 export const Contact = () => {
-  const { dp } = useContext(GlobalContext);
+  const { dp, messageSent, messageError } = useContext(GlobalContext);
+  let { isEmailSent } = useContext(GlobalContext);
+
+  const [userfullName, setUserFullName] = useState('');
+  const [userEmail, setUserEmail] = useState('');
+  const [userMessage, setUserMessage] = useState('');
+
+  const handleForm = (e) => {
+    e.preventDefault();
+    console.log('Hello');
+    const templateId = 'template_lcAf46LY';
+
+    sendFeedback(templateId, {
+      message_html: userMessage,
+      from_name: userfullName,
+      reply_to: userEmail,
+      to_name: 'Lattrell',
+    });
+  };
+
+  const sendFeedback = (templateId, variables) => {
+    window.emailjs
+      .send('gmail', templateId, variables)
+      .then((res) => {
+        if (res.status === 200) {
+          setUserEmail('');
+          setUserFullName('');
+          setUserMessage('');
+          messageSent('sent');
+        } else {
+          messageError('error');
+        }
+      })
+      .catch((err) => console.log(`Error: ${err}`));
+  };
 
   return (
     <div className='two-grid contact-container'>
@@ -50,15 +87,38 @@ export const Contact = () => {
         </div>
       </div>
       <div className='grid-box form-box'>
-        <form className='form-container'>
+        <form className='form-container' onSubmit={handleForm}>
           <label htmlFor='name'>Full Name</label>
-          <input type='text' className='input-field' />
+          <input
+            type='text'
+            className='input-field'
+            value={userfullName}
+            onChange={(e) => {
+              setUserFullName(e.target.value);
+            }}
+          />
           <label htmlFor='email'>Email</label>
-          <input type='email' className='input-field' />
+          <input
+            type='email'
+            className='input-field'
+            value={userEmail}
+            onChange={(e) => {
+              setUserEmail(e.target.value);
+            }}
+          />
           <label htmlFor='message'>Message</label>
-          <textarea name='message' className='message-field'></textarea>
+          <textarea
+            name='message'
+            className='message-field'
+            value={userMessage}
+            onChange={(e) => {
+              setUserMessage(e.target.value);
+            }}
+          ></textarea>
           <input type='submit' value='SEND' className='send-button' />
         </form>
+        <div>{isEmailSent === 'sent' ? <EmailSucces /> : ''}</div>
+        <div>{isEmailSent === 'error' ? <EmailError /> : ''}</div>
       </div>
     </div>
   );

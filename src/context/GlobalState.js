@@ -20,7 +20,7 @@ const initialState = {
       role: 'Customer Service Engineer',
       companyName: 'Asnet Technologies',
       roleDescription:
-        'Adaptable: Able to remain flexible amidst changes and uncertainty. Willing to adopt new methods to improve current processes. Proactive in identifying system weaknesses and offering solutions to fix them. ',
+        "First point of contact to provide support for customer's audio and visual queries or incident via phone call or email. Given my software development background, I am currently mastering our ticketing system and receiving training to improve its functionality. Moreover, I am also the website administrator for our website. Lastly, I produce high quality documentations for my team to use.",
       tenure: 'September 2019 - Present',
     },
     {
@@ -28,7 +28,7 @@ const initialState = {
       role: 'Contractor',
       companyName: 'WDHB North Shore',
       roleDescription:
-        'daptable: Able to remain flexible amidst changes and uncertainty. Willing to adopt new methods to improve current processes. Proactive in identifying system weaknesses and offering solutions to fix them. ',
+        'Successfully built and implemented five databases using Microsoft Access for the Clinical and Coding department. Created documentations that clearly explained the instructions for the databases. Backend used: VBA and SQL.',
       tenure: 'November 2018 - September 2019',
     },
     {
@@ -36,7 +36,7 @@ const initialState = {
       role: 'IT Support Technician',
       companyName: 'Recreational Services',
       roleDescription:
-        'Adaptable: Able to remain flexible amidst changes and uncertainty. Willing to adopt new methods to improve current processes. Proactive in identifying system weaknesses and offering solutions to fix them. ',
+        'Resolved technical issues via phone or email, at the client’s preference. Attentively set up network servers, ensuring that all cables, switches, routers and modems were properly connected. •	Overlooked the company’s domain network.',
       tenure: 'August 2018 - November 2018',
     },
   ],
@@ -83,6 +83,7 @@ const initialState = {
       projectImage: dategenerator,
     },
   ],
+  isEmailSent: '',
 };
 
 // Create context
@@ -107,6 +108,20 @@ export const GlobalProvider = ({ children }) => {
     });
   }
 
+  function messageSent(isEmailSent) {
+    dispatch({
+      type: 'MESSAGE_SENT',
+      payload: isEmailSent,
+    });
+  }
+
+  function messageError(isEmailSent) {
+    dispatch({
+      type: 'MESSAGE_ERROR',
+      payload: isEmailSent,
+    });
+  }
+
   return (
     <GlobalContext.Provider
       value={{
@@ -116,8 +131,11 @@ export const GlobalProvider = ({ children }) => {
         workExperience: state.workExperience,
         education: state.education,
         projects: state.projects,
+        isEmailSent: state.isEmailSent,
         closeLandingPage,
         updateUserName,
+        messageSent,
+        messageError,
       }}
     >
       {children}

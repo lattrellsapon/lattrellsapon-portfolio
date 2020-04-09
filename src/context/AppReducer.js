@@ -10,6 +10,16 @@ export default (state, action) => {
         ...state,
         isLandingPageClose: action.payload,
       };
+    case 'MESSAGE_SENT':
+      return {
+        ...state,
+        isEmailSent: action.payload,
+      };
+    case 'MESSAGE_ERROR':
+      return {
+        ...state,
+        isEmailSent: action.payload,
+      };
     default:
       return state;
   }
