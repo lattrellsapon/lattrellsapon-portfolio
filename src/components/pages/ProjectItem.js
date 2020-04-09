@@ -2,7 +2,7 @@ import React from 'react';
 
 export const ProjectItem = ({ project }) => {
   return (
-    <div project-container>
+    <div classname='project-container'>
       <div className='project-header text-center'>
         <h3>
           <a

@@ -1,6 +1,8 @@
 import React, { useContext } from 'react';
 import showcase from '../../videos/showcase.mp4';
 
+import { Link } from 'react-router-dom';
+
 import { GlobalContext } from '../../context/GlobalState';
 
 export const Home = () => {
@@ -23,18 +25,19 @@ export const Home = () => {
               Lattrell Sapon
             </span>{' '}
             and I am a{' '}
-            <span className='highlight-green'>Software Developer</span> graduate
-            from Auckland Unitversity Of Technology (AUT). I am a dedicated and
-            results-oriented worker with experience in Customer Service
-            Engineering and IT support. Key strengths lie in teamwork,
-            troubleshooting, communication and adaptability skills. Works
-            effectively in team environments, and takes initiative in improving
-            current work processes or methods. Attentive to details and
-            proficient in documentation. An eager learner who also demonstrates
-            a reliable work ethic.
+            <Link to='/career' className='highlight-green'>
+              Software Developer
+            </Link>{' '}
+            graduate from Auckland Unitversity Of Technology (AUT). I have a
+            burning passion in web development. As you will see in this
+            portfolio, I have two years of hands-on experience efficiently
+            coding websites and applications using modern HTML, CSS, and
+            Javascript. I enjoy building websites that are user-friendly and
+            have a modern design.
           </p>
           <p>
-            Feel free to browse the rest of my portfolio to learn more about me!
+            Feel free to browse the rest of my portfolio to learn more about me.
+            Happy browsing!
           </p>
         </section>
         <section>

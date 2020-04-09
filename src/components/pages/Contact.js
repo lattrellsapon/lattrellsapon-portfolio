@@ -44,44 +44,48 @@ export const Contact = () => {
 
   return (
     <div className='two-grid contact-container'>
-      <div className='grid-box info-container text-center'>
-        <h1>Contact me</h1>
-
-        <div>
-          <p>
-            Thank you again for your interest. Get in touch if you want to know
-            more about me. Cheers!
-          </p>
-          <div className='contact-details'>
+      <div className='grid-box  text-center'>
+        <div className='info-container'>
+          <h1>Contact me</h1>
+          <div>
             <p>
-              <i className='fas fa-phone highlight-green'></i>
-              <a href='tel:0211775895' className='contact-link'>
-                0211775895
-              </a>
+              Thank you again for your interest. Get in touch if you want to
+              know more about me. Cheers!
             </p>
-            <p>
-              <i className='fas fa-envelope highlight-green'></i>
-              <a href='mailto:lattrellsapon@gmail.com' className='contact-link'>
-                lattrellsapon@gmail.com
-              </a>
-            </p>
-            <div className='icon-container'>
-              <a
-                href='https://www.linkedin.com/in/lattrell-sapon-772b49143/'
-                className='highlight-green'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <i className='fab fa-linkedin link-linkedin'></i>
-              </a>
-              <a
-                href='https://github.com/lattrellsapon'
-                className='highlight-green'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <i className='fab fa-github-square link-github'></i>
-              </a>
+            <div className='contact-details'>
+              <p>
+                <i className='fas fa-phone highlight-green'></i>
+                <a href='tel:0211775895' className='contact-link'>
+                  0211775895
+                </a>
+              </p>
+              <p>
+                <i className='fas fa-envelope highlight-green'></i>
+                <a
+                  href='mailto:lattrellsapon@gmail.com'
+                  className='contact-link'
+                >
+                  lattrellsapon@gmail.com
+                </a>
+              </p>
+              <div className='icon-container'>
+                <a
+                  href='https://www.linkedin.com/in/lattrell-sapon-772b49143/'
+                  className='highlight-green'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  <i className='fab fa-linkedin link-linkedin'></i>
+                </a>
+                <a
+                  href='https://github.com/lattrellsapon'
+                  className='highlight-green'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  <i className='fab fa-github-square link-github'></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>

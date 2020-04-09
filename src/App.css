@@ -166,8 +166,8 @@ img {
   top: 0;
   bottom: 0;
   margin: auto;
-  background: #343a40;
-  color: #f8f9fa;
+  background: #f8f9fa;
+  color: #282c34;
   opacity: 0.8;
   width: 80%;
   max-height: 350px;
@@ -186,7 +186,7 @@ section p {
 
 .skills-container {
   background: #f8f9fa;
-  padding: 10px;
+  padding: 20px 10px;
   margin: 10px auto 200px auto;
   border-radius: 4px;
 }
@@ -214,7 +214,7 @@ section p {
 .work-experience-container,
 .education-container {
   background: #f8f9fa;
-  padding: 10px;
+  padding: 20px 10px;
   margin-bottom: 10px;
   border-radius: 4px;
 }
@@ -274,6 +274,10 @@ section p {
 .link-github {
   margin: 2px 5px;
   font-size: 24px;
+}
+
+.info-container {
+  padding: 20px 0;
 }
 
 .form-box {
@@ -391,7 +395,7 @@ footer {
     grid-template-columns: 1fr;
   }
   .contact-container {
-    margin-bottom: 80px;
+    margin-bottom: 150px;
   }
   .links-container {
     width: 40%;
@@ -418,5 +422,9 @@ footer {
 @media only screen and (min-width: 1200px) {
   .skills-container {
     margin-bottom: 500px;
+  }
+
+  .contact-container {
+    margin-bottom: 250px;
   }
 }
