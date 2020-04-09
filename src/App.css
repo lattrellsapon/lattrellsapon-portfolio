@@ -400,6 +400,9 @@ footer {
   .links-container {
     width: 40%;
   }
+  .send-button {
+    width: 30%;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
