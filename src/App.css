@@ -41,7 +41,7 @@ img {
 
 .landing-page {
   background: #000;
-  color: #fff;
+  color: #f8f9fa;
   height: 100%;
   width: 100%;
   position: fixed;
@@ -58,18 +58,19 @@ img {
 
 .landing-container {
   padding: 50px;
+  border: 1px solid #f8f9fa;
   border-radius: 4px;
 }
 
 .user-name {
   background: #343a40;
-  padding: 5px;
+  padding: 10px 5px;
+  border: none;
   color: #f8f9fa;
-  border-color: #f8f9fa;
-  border: 1px solid;
   margin: 10px auto;
   font-size: 18px;
   text-align: center;
+  outline: none;
 }
 
 .submit-button {
@@ -86,7 +87,7 @@ img {
 
 .close-button {
   background: #dc3545;
-  color: #fff;
+  color: #f8f9fa;
   border: none;
   padding: 8px;
   margin: 10px auto;
@@ -232,6 +233,7 @@ section p {
 }
 
 /* Contact */
+
 .contact-container {
   /* background: #f8f9fa; */
   padding: 10px;
@@ -264,9 +266,14 @@ section p {
   border-radius: 4px;
 }
 
-.fab {
+.link-linkedin,
+.link-github {
   margin: 2px 5px;
   font-size: 24px;
+}
+
+.form-box {
+  padding: 50px 0;
 }
 
 .form-container {
@@ -281,11 +288,14 @@ textarea {
 
 .input-field,
 .message-field {
+  font-size: 14px;
+  background: #f8f9fa;
   width: 100%;
   padding: 10px;
   margin: 0 auto 20px auto;
   border: none;
   outline: none;
+  border-bottom: 1px solid #282c34;
 }
 
 .input-field {
@@ -312,6 +322,7 @@ textarea {
   border-radius: 4px;
   cursor: pointer;
   outline: none;
+  width: 20%;
 }
 
 /* Footer */
@@ -327,6 +338,19 @@ footer {
   margin: auto;
   padding-top: 20px;
   text-align: center;
+}
+
+.links-container {
+  padding: 5px;
+  width: 20%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.link-footer {
+  font-size: 22px;
 }
 
 /* Media Queries */
@@ -367,7 +391,8 @@ footer {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .skills-container {
+  .skills-container,
+  .projects-container {
     margin-bottom: 200px;
   }
 }

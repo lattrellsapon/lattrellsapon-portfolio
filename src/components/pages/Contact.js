@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
+
+import { GlobalContext } from '../../context/GlobalState';
 
 export const Contact = () => {
+  const { dp } = useContext(GlobalContext);
+
   return (
     <div className='two-grid contact-container'>
       <div className='grid-box info-container text-center'>
         <h1>Contact me</h1>
+
         <div>
           <p>
             Thank you again for your interest. Get in touch if you want to know
@@ -27,20 +32,24 @@ export const Contact = () => {
               <a
                 href='https://www.linkedin.com/in/lattrell-sapon-772b49143/'
                 className='highlight-green'
+                target='_blank'
+                rel='noopener noreferrer'
               >
-                <i className='fab fa-linkedin'></i>
+                <i className='fab fa-linkedin link-linkedin'></i>
               </a>
               <a
                 href='https://github.com/lattrellsapon'
                 className='highlight-green'
+                target='_blank'
+                rel='noopener noreferrer'
               >
-                <i className='fab fa-github-square'></i>
+                <i className='fab fa-github-square link-github'></i>
               </a>
             </div>
           </div>
         </div>
       </div>
-      <div className='grid-box'>
+      <div className='grid-box form-box'>
         <form className='form-container'>
           <label htmlFor='name'>Full Name</label>
           <input type='text' className='input-field' />

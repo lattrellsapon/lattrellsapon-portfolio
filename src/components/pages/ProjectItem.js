@@ -9,6 +9,7 @@ export const ProjectItem = ({ project }) => {
             href={project.projectLink}
             className='highlight-green'
             target='_blank'
+            rel='noopener noreferrer'
           >
             {project.projectName}
           </a>

@@ -5,13 +5,15 @@ import rosaryapp from '../images/RosaryApp.png';
 import portfoliophotography from '../images/Photography.png';
 import dategenerator from '../images/DateGenerator.png';
 import budgetmanager from '../images/BudgetManager.png';
+import dp from '../images/dp.jpg';
 
 import auttranscript from '../transcript/auttranscript.pdf';
 
 // Initial State
 const initialState = {
+  dp: dp,
   currentUser: '',
-  isLandingPageClose: false,
+  isLandingPageClose: true,
   workExperience: [
     {
       id: 1,
@@ -108,6 +110,7 @@ export const GlobalProvider = ({ children }) => {
   return (
     <GlobalContext.Provider
       value={{
+        dp: state.dp,
         currentUser: state.currentUser,
         isLandingPageClose: state.isLandingPageClose,
         workExperience: state.workExperience,
