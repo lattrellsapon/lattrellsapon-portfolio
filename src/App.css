@@ -393,6 +393,14 @@ footer {
   .flex-container {
     flex-direction: column;
   }
+  .container {
+    width: 100%;
+  }
+  .work-experience-container,
+  .education-container,
+  .skills-container {
+    border-radius: 0%;
+  }
   .two-grid {
     grid-template-columns: 1fr;
   }
