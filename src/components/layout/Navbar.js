@@ -7,7 +7,7 @@ export const Navbar = () => {
       <div className='nav-box home-box'>
         <h2>Lattrell's porfolio</h2>
       </div>
-      <div className='nav-box'>
+      <div className='nav-box '>
         <ul>
           <li>
             <Link to='/' className='links'>

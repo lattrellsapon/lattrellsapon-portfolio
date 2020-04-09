@@ -369,6 +369,11 @@ footer {
   }
   .nav-box {
     margin: 10px auto;
+    text-align: center;
+  }
+  .nav-box li {
+    display: block;
+    margin: 10px auto;
   }
   .showcase {
     display: block;
