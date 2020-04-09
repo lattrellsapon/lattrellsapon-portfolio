@@ -13,7 +13,7 @@ import auttranscript from '../transcript/auttranscript.pdf';
 const initialState = {
   dp: dp,
   currentUser: '',
-  isLandingPageClose: true,
+  isLandingPageClose: false,
   workExperience: [
     {
       id: 1,
