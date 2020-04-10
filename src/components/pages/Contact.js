@@ -94,6 +94,7 @@ export const Contact = () => {
         <form className='form-container' onSubmit={handleForm}>
           <label htmlFor='name'>Full Name</label>
           <input
+            required
             type='text'
             className='input-field'
             value={userfullName}
@@ -103,6 +104,7 @@ export const Contact = () => {
           />
           <label htmlFor='email'>Email</label>
           <input
+            required
             type='email'
             className='input-field'
             value={userEmail}
@@ -112,6 +114,7 @@ export const Contact = () => {
           />
           <label htmlFor='message'>Message</label>
           <textarea
+            required
             name='message'
             className='message-field'
             value={userMessage}

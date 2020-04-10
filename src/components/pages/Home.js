@@ -30,10 +30,9 @@ export const Home = () => {
             </Link>{' '}
             graduate from Auckland Unitversity Of Technology (AUT). I have a
             burning passion in web development. As you will see in this
-            portfolio, I have two years of hands-on experience efficiently
-            coding websites and applications using modern HTML, CSS, and
-            Javascript. I enjoy building websites that are user-friendly and
-            have a modern design.
+            portfolio, I have hands-on experience efficiently coding websites
+            and applications using modern HTML, CSS, and Javascript. I enjoy
+            building websites that are user-friendly and have a modern design.
           </p>
           <p>
             Feel free to browse the rest of my portfolio to learn more about me.
