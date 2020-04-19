@@ -70,6 +70,14 @@ export const Contact = () => {
               </p>
               <div className='icon-container'>
                 <a
+                  href='https://www.youtube.com/channel/UC6I_M1lFqU3KQORAzW0VTCw?view_as=subscriber'
+                  className='highlight-green'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  <i class='fab fa-youtube link-youtube'></i>
+                </a>
+                <a
                   href='https://www.linkedin.com/in/lattrell-sapon-772b49143/'
                   className='highlight-green'
                   target='_blank'

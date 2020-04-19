@@ -15,6 +15,13 @@ export const Footer = () => {
             <i className='fas fa-envelope highlight-green link-footer'></i>
           </a>
           <a
+            href='https://www.youtube.com/channel/UC6I_M1lFqU3KQORAzW0VTCw?view_as=subscriber'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <i className='fab fa-youtube highlight-green link-footer'></i>
+          </a>
+          <a
             href='https://www.linkedin.com/in/lattrell-sapon-772b49143/'
             target='_blank'
             rel='noopener noreferrer'

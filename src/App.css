@@ -271,7 +271,8 @@ section p {
 }
 
 .link-linkedin,
-.link-github {
+.link-github,
+.link-youtube {
   margin: 2px 5px;
   font-size: 24px;
 }
