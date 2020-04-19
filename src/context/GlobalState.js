@@ -5,6 +5,8 @@ import rosaryapp from '../images/RosaryApp.png';
 import portfoliophotography from '../images/Photography.png';
 import dategenerator from '../images/DateGenerator.png';
 import budgetmanager from '../images/BudgetManager.png';
+import reactblog from '../images/ReactBlog.png';
+
 import dp from '../images/dp.jpg';
 
 import auttranscript from '../transcript/auttranscript.pdf';
@@ -81,6 +83,12 @@ const initialState = {
       projectName: 'Date Generator',
       projectLink: 'https://goofy-borg-191ede.netlify.com/',
       projectImage: dategenerator,
+    },
+    {
+      id: 4,
+      projectName: 'Blog Application',
+      projectLink: 'https://condescending-liskov-8dffda.netlify.app/',
+      projectImage: reactblog,
     },
   ],
   isEmailSent: '',
