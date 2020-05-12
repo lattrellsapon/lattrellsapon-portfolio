@@ -6,6 +6,7 @@ import portfoliophotography from '../images/Photography.png';
 import dategenerator from '../images/DateGenerator.png';
 import budgetmanager from '../images/BudgetManager.png';
 import reactblog from '../images/ReactBlog.png';
+import letuspraynz from '../images/LetUsPray.png';
 
 import dp from '../images/dp.jpg';
 
@@ -89,6 +90,12 @@ const initialState = {
       projectName: 'Blog Application',
       projectLink: 'https://condescending-liskov-8dffda.netlify.app/',
       projectImage: reactblog,
+    },
+    {
+      id: 5,
+      projectName: 'Let Us Pray - Invitation Website',
+      projectLink: 'http://www.letuspraynz.com/',
+      projectImage: letuspraynz,
     },
   ],
   isEmailSent: '',
